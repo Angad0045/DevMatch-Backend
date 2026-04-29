@@ -86,7 +86,7 @@ src/
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/your-username/devmatch-backend.git
+git clone https://github.com/Angad0045/DevMatch-Backend.git
 cd devmatch-backend
 npm install
 ```
