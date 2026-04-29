@@ -1,0 +1,47 @@
+{
+  "name": "devmatch-backend",
+  "version": "1.0.0",
+  "description": "DevMatch — a developer-matching platform inspired by Tinder's swipe-based UX",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.local.js",
+    "start": "node src/server.js",
+    "start:socket": "node src/socket.server.js",
+    "lint": "eslint src --ext .js",
+    "lint:fix": "eslint src --ext .js --fix"
+  },
+  "keywords": [
+    "Node.js",
+    "Express.js",
+    "MongoDB(Mongoose)",
+    "JWT",
+    "Auth"
+  ],
+  "author": "Angad Patil",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^8.3.2",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.4.1",
+    "socket.io": "^4.8.3",
+    "validator": "^13.15.35",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
+    "eslint": "^10.2.0",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.8.3"
+  }
+}
