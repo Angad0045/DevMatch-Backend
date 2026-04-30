@@ -23,6 +23,6 @@ export const connectDB = async () => {
     });
   } catch (err) {
     console.error("❌ MongoDB connection failed:", err.message);
-    process.exit(1);
+    throw err;
   }
 };
